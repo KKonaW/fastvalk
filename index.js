@@ -125,4 +125,4 @@ module.exports = function ValkJS(mod) {
         mod.clearTimeout(lastTimeout);
         lastTimeout = null;
     });
-}//Imagine having such big ego to put your Discord tag at the end of a cracked script OMEGALUL
+}
