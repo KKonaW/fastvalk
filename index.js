@@ -123,6 +123,21 @@ module.exports = function ValkJS(mod) {
     mod.hook('S_EACH_SKILL_RESULT', 15, { 'order': -10000000 }, event => {
         if (!isEnabled || !lastTimeout || event.target !== mod.game.me.gameId || !event.reaction.enable) return;
         mod.clearTimeout(lastTimeout);
-        lastTimeout = null;
+        lastTimeout = null;        
     });
+    
+    // ################ //
+	// ### Commands ### //
+	// ################ //
+
+	mod.command.add(['fastvalk', 'fv'], (cmd) => {
+		if(cmd == null) {
+			enabled = !enabled
+			mod.command.message(niceName + 'fastvalk ' + (enabled ? '<font color="#56B4E9">enabled</font>' : '<font color="#E69F00">disabled</font>'))
+			console.log('fastvalk ' + (enabled ? 'enabled' : 'disabled'))
+		}
+		else mod.command.message('Commands:\n'
+			+ ' "fv" (enable/disable fastvalk),\n'
+		)
+	})
 }
