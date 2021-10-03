@@ -1,2 +1,2 @@
-# QuickValkyrieForAutisticPeople
-a tera meme
+# FastValk
+Let's you cast skills faster
