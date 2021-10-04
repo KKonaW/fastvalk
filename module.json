@@ -11,6 +11,6 @@
     "dependencies": {
         "library": "https://raw.githubusercontent.com/Kaseaa/library/master/module.json"
     },
-    "servers": ["https://github.com/ketchdrown/fastvalk.git"],
+    "servers": ["https://raw.githubusercontent.com/ketchdrown/fastvalk/master/"],
     "supportUrl": "https://github.com/ketchdrown/fastvalk/issues/"
 }
