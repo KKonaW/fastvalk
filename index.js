@@ -125,19 +125,4 @@ module.exports = function ValkJS(mod) {
         mod.clearTimeout(lastTimeout);
         lastTimeout = null;        
     });
-    
-    // ################ //
-	// ### Commands ### //
-	// ################ //
-
-	mod.command.add(['fastvalk', 'fv'], (cmd) => {
-		if(cmd == null) {
-			enabled = !enabled
-			mod.command.message(niceName + 'fastvalk ' + (enabled ? '<font color="#56B4E9">enabled</font>' : '<font color="#E69F00">disabled</font>'))
-			console.log('fastvalk ' + (enabled ? 'enabled' : 'disabled'))
-		}
-		else mod.command.message('Commands:\n'
-			+ ' "fv" (enable/disable fastvalk),\n'
-		)
-	})
 }
